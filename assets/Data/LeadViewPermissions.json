@@ -1,0 +1,16 @@
+{
+  "New Leads": ["Telecaller", "CRM Exec.", "Manager"],
+  "Contacted": ["Telecaller", "CRM Exec.", "Manager"],
+  "Qualified": ["Telecaller", "CRM Exec.", "Manager"],
+  "Site Visits": ["Agent", "CRM Exec.", "Manager"],
+  "Negotiation": ["Agent", "CRM Exec.", "Manager"],
+  "Booking Confirmed": ["Documentation", "CRM Exec.", "Manager"],
+  "Document Collection": ["Documentation", "CRM Exec.", "Manager"],
+  "Loan Under Process": ["Documentation", "CRM Exec.", "Manager"],
+  "Finalized / Closed": ["CRM Exec.", "Documentation", "Manager"],
+  "Follow-up": ["Telecaller", "Agent", "CRM Exec.", "Manager"],
+  "Not negotiated": ["Telecaller", "Agent", "Manager"],
+  "Not Interested": ["Telecaller", "Agent", "CRM Exec.", "Manager"],
+  "Duplicate": ["CRM Exec.", "Manager"],
+  "Invalid Lead": ["CRM Exec.", "Manager"]
+}

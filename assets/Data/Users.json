@@ -1,0 +1,132 @@
+[
+  {
+    "id": "U001",
+    "name": "Sneha Rathi",
+    "email": "sneha.rathi@example.com",
+    "password": "123456",
+    "role": "telecaller",
+    "profileImage": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "9876543210",
+    "token": "a1b2c3d4-e5f6-7890-abcd-1234567890aa"
+  },
+  {
+    "id": "U002",
+    "name": "Ravi Meena",
+    "email": "ravi.meena@example.com",
+    "password": "password123",
+    "role": "agent",
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "8765432109",
+    "token": "b2c3d4e5-f6a7-8901-bcde-2345678901bb"
+  },
+  {
+    "id": "U004",
+    "name": "Sourabh Jain",
+    "email": "sourabh.jain@example.com",
+    "password": "sourabh@321",
+    "role": "crm",
+    "profileImage": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "6543210987",
+    "token": "d4e5f6a7-b8c9-0123-def0-4567890123dd"
+  },
+  {
+    "id": "U005",
+    "name": "Rohit Verma",
+    "email": "rohit.verma@example.com",
+    "password": "rohitpass",
+    "role": "manager",
+    "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "9432109876",
+    "token": "e5f6a7b8-c9d0-1234-ef01-5678901234ee"
+  },
+  {
+    "id": "U006",
+    "name": "Anjali Thakur",
+    "email": "anjali.thakur@example.com",
+    "password": "anjali2024",
+    "role": "agent",
+    "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "8321098765",
+    "token": "f6a7b8c9-d0e1-2345-f012-6789012345ff"
+  },
+  {
+    "id": "U007",
+    "name": "Kunal Patel",
+    "email": "kunal.patel@example.com",
+    "password": "patelkunal",
+    "role": "documentation",
+    "profileImage": "https://images.unsplash.com/photo-1506794778202-6d8d11a09a2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "7210987654",
+    "token": "a7b8c9d0-e1f2-3456-0123-7890123456gg"
+  },
+  {
+    "id": "U008",
+    "name": "Pooja Bansal",
+    "email": "pooja.bansal@example.com",
+    "password": "bansal123",
+    "role": "crm",
+    "profileImage": "https://images.unsplash.com/photo-1517841903200-7b07b639e1a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "6109876543",
+    "token": "b8c9d0e1-f2a3-4567-1234-8901234567hh"
+  },
+  {
+    "id": "U009",
+    "name": "Amit Khurana",
+    "email": "amit.khurana@example.com",
+    "password": "amitpass",
+    "role": "admin",
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "9098765432",
+    "token": "c9d0e1f2-a3b4-5678-2345-9012345678ii"
+  },
+  {
+    "id": "U010",
+    "name": "Meena Sharma",
+    "email": "meena.sharma@example.com",
+    "password": "meenapass",
+    "role": "telecaller",
+    "profileImage": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "8987654321",
+    "token": "d0e1f2a3-b4c5-6789-3456-0123456789jj"
+  },
+  {
+    "id": "U011",
+    "name": "Nikhil Raj",
+    "email": "nikhil.raj@example.com",
+    "password": "nikhil321",
+    "role": "agent",
+    "profileImage": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "7876543210",
+    "token": "e1f2a3b4-c5d6-7890-4567-1234567890kk"
+  },
+  {
+    "id": "U013",
+    "name": "Manish Tiwari",
+    "email": "manish.tiwari@example.com",
+    "password": "manish@123",
+    "role": "documentation",
+    "profileImage": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "5654321098",
+    "token": "a3b4c5d6-e7f8-9012-6789-3456789012mm"
+  },
+  {
+    "id": "U014",
+    "name": "Divya Kapoor",
+    "email": "divya.kapoor@example.com",
+    "password": "divya123",
+    "role": "crm",
+    "profileImage": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "9543210987",
+    "token": "b4c5d6e7-f8a9-0123-7890-4567890123nn"
+  },
+  {
+    "id": "U015",
+    "name": "Arjun Meena",
+    "email": "arjun.meena@example.com",
+    "password": "arjun2024",
+    "role": "admin",
+    "profileImage": "https://images.unsplash.com/photo-1506794778202-6d8d11a09a2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    "phone": "8432109876",
+    "token": "c5d6e7f8-a9b0-1234-8901-5678901234oo"
+  }
+]

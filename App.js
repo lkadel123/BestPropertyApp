@@ -1,35 +1,26 @@
-import React, { useContext } from 'react';
-import {
-  NavigationContainer,
-  DefaultTheme,
-  DarkTheme,
-} from '@react-navigation/native';
+// App.js
+import React from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 
-import AuthProvider,{ AuthContext } from './context/AuthContext';
-import { ThemeProvider, useTheme } from './context/ThemeContext';
+import { RoleProvider } from './context/RoleContext';
+import AuthProvider from './context/AuthContext';
+import { UserProvider } from './context/UserContext';
+import AppNavigator from './AppNavigator';
 
-import AuthStack from './navigation/AuthStack';
-import TabNavigator from './navigation/TabNavigator';
-
-// Navigator that switches between Auth and App based on user login
-function AppNavigator() {
-  const { user } = useContext(AuthContext);
-  const { theme } = useTheme(); // 'light' or 'dark'
-
-  return (
-    <NavigationContainer theme={theme === 'dark' ? DarkTheme : DefaultTheme}>
-      {user ? <TabNavigator /> : <AuthStack />}
-    </NavigationContainer>
-  );
-}
-
-// App root wrapped in Auth and Theme providers
 export default function App() {
   return (
-    <AuthProvider>
-      <ThemeProvider>
-        <AppNavigator />
-      </ThemeProvider>
-    </AuthProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <RoleProvider>
+          <AuthProvider>
+            <UserProvider>
+              <AppNavigator />
+            </UserProvider>
+          </AuthProvider>
+        </RoleProvider>
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 }
+

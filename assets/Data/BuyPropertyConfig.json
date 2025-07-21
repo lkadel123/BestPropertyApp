@@ -1,0 +1,414 @@
+{
+  "residential": {
+    "Flat/Apartment": {
+      "step1": [
+        {
+          "name": "bhk",
+          "label": "Flat/Apartment Type",
+          "type": "select",
+          "placeholder": "Select Flat/Apartment Type...",
+          "options": [
+            "1RK/Studio", "1BHK", "2BHK", "2+1BHK", "3BHK", "3+1BHK", "4BHK", "4+1BHK", "5BHK", "5+1BHK", "Other"
+          ]
+        }
+      ]
+    },
+    "Independent House / Kothi": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "built",
+          "label": "Covered Area",
+          "type": "selectOrText",
+          "placeholder": "Covered Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "kothi_story_type",
+          "label": "Independent House / Kothi Type",
+          "type": "select",
+          "options": ["Single Story", "Double Story", "Duplex Story", "Triplex Story", "Villa Style"]
+        }
+      ]
+    },
+    "Independent/Builder Floor": {
+      "step1": [
+        {
+          "name": "floor_no",
+          "label": "Independent/Builder Floor Type",
+          "type": "select",
+          "options": ["Ground Floor", "1st Floor", "2nd Floor", "3rd Floor", "Top Floor"]
+        }
+      ]
+    },
+    "Plot": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "width_length",
+          "label": "Width x Length",
+          "type": "text",
+          "placeholder": "e.g., 30x40"
+        },
+        {
+          "name": "road_width",
+          "label": "Road Width",
+          "type": "selectOrText",
+          "option": ["20ft", "30ft", "40ft", "50ft+"]
+        }
+      ]
+    },
+    "Serviced Apartment": {
+      "step1": [
+        {
+          "name": "bhk",
+          "label": "Serviced Apartment Type",
+          "type": "select",
+          "options": ["1RK/Studio", "1BHK", "2BHK", "3BHK", "Penthouse"]
+        }
+      ]
+    },
+    "Farmhouse": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "additional",
+          "label": "Farm Area (Optional)",
+          "type": "selectOrText",
+          "placeholder": "Farm Area (acres)",
+          "option": ["sq.yard", "marla", "kanal", "acres"]
+        }
+      ]
+    },
+    "Other": {
+      "step1": [
+        {
+          "name": "property_type",
+          "label": "Describe Property Type",
+          "type": "text",
+          "placeholder": "Describe the property type"
+        }
+      ]
+    }
+  },
+  "commercial": {
+    "Office": {
+      "step1": [
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing",
+          "type": "select",
+          "options": ["Bare Shell", "Semi-Furnished", "Furnished"]
+        },
+        {
+          "name": "sqft",
+          "label": "Area in sq.ft",
+          "type": "selectOrText",
+          "placeholder": "Area in sq.ft",
+          "option": ["sq.ft", "marla", "kanal"]
+        }
+      ]
+    },
+    "Retail": {
+      "step1": [
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing",
+          "type": "select",
+          "options": ["Bare Shell", "Semi-Furnished", "Furnished"]
+        },
+        {
+          "name": "sqft",
+          "label": "Area in sq.ft",
+          "type": "selectOrText",
+          "placeholder": "Area in sq.ft",
+          "option": ["sq.ft", "marla", "kanal"]
+        }
+      ]
+    },
+    "Plot/Land": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "width_length",
+          "label": "Width x Length",
+          "type": "text",
+          "placeholder": "e.g., 30x40"
+        },
+        {
+          "name": "road_width",
+          "label": "Road Width",
+          "type": "selectOrText",
+          "option": ["20ft", "30ft", "40ft", "50ft+"]
+        },
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        }
+      ]
+    },
+    "Storage": {
+      "step1": [
+        {
+          "name": "built",
+          "label": "Built-Up Area",
+          "type": "selectOrText",
+          "placeholder": "Built Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "land",
+          "label": "Land Area",
+          "type": "selectOrText",
+          "placeholder": "Land Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        }
+      ]
+    },
+    "Industry": {
+      "step1": [
+        {
+          "name": "built",
+          "label": "Built Area",
+          "type": "selectOrText",
+          "placeholder": "Built Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "land",
+          "label": "Land Area",
+          "type": "selectOrText",
+          "placeholder": "Land Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        }
+      ]
+    },
+    "Hospital": {
+      "step1": [
+        {
+          "name": "property_type",
+          "label": "Describe Property Type",
+          "type": "text",
+          "placeholder": "Describe the property type"
+        }
+      ]
+    },
+    "Other": {
+      "step1": [
+        {
+          "name": "property_type",
+          "label": "Describe Property Type",
+          "type": "text",
+          "placeholder": "Describe the property type"
+        }
+      ]
+    }
+  },
+  "step3Fields": [
+    {
+      "name": "timeline",
+      "label": "Timeline",
+      "type": "select",
+      "placeholder": "Select Timeline",
+      "options": ["Immediate", "Within Week", "Within Month", "1-3 Months", "3-6 Months", "6+ Months"]
+    },
+    {
+      "name": "requirement",
+      "label": "Any Specific Requirements",
+      "type": "textarea",
+      "placeholder": "Specify any specific requirements (max 200 characters)",
+      "maxLength": 200
+    }
+  ],
+  "leadFields": [
+    {
+      "name": "uName",
+      "label": "Name",
+      "type": "text",
+      "placeholder": "Enter lead's name",
+      "required": true
+    },
+    {
+      "name": "mobile",
+      "label": "Phone Number",
+      "type": "text",
+      "placeholder": "Enter 10-digit phone number",
+      "keyboardType": "numeric",
+      "maxLength": 10,
+      "required": true
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "type": "text",
+      "placeholder": "Enter email (optional)",
+      "keyboardType": "email-address"
+    },
+    {
+      "name": "status",
+      "label": "Status",
+      "type": "select",
+      "placeholder": "Select Status",
+      "options": [
+        "New Leads",
+        "Contacted",
+        "Qualified",
+        "Site Visits",
+        "Negotiation",
+        "Booking Confirmed",
+        "Document Collection",
+        "Loan Under Process",
+        "Finalized / Closed",
+        "Follow-up",
+        "Not negotiated",
+        "Not Interested",
+        "Duplicate",
+        "Invalid Lead"
+      ],
+      "required": true
+    },
+    {
+      "name": "address",
+      "label": "Address",
+      "type": "text",
+      "placeholder": "Enter address",
+      "required": true
+    },
+    {
+      "name": "preferred_location",
+      "label": "Preferred Location",
+      "type": "text",
+      "placeholder": "Enter preferred location",
+      "required": true
+    },
+    {
+      "name": "budget",
+      "label": "Budget",
+      "type": "text",
+      "placeholder": "Enter budget (e.g., 45L or 4500000)",
+      "required": true
+    },
+    {
+      "name": "max_budget",
+      "label": "Max Budget",
+      "type": "text",
+      "placeholder": "Enter max budget (e.g., 55L or 5500000)",
+      "required": true
+    },
+    {
+      "name": "leads_type",
+      "label": "Leads Type",
+      "type": "select",
+      "placeholder": "Select Leads Type",
+      "options": ["Buyer", "Seller", "Renter"],
+      "required": true
+    },
+    {
+      "name": "description",
+      "label": "Notes",
+      "type": "textarea",
+      "placeholder": "Enter additional notes (optional)",
+      "maxLength": 200
+    },
+    {
+      "name": "city",
+      "label": "City",
+      "type": "text",
+      "placeholder": "Enter city",
+      "required": true
+    },
+    {
+      "name": "state",
+      "label": "State",
+      "type": "text",
+      "placeholder": "Enter state",
+      "required": true
+    },
+    {
+      "name": "userType",
+      "label": "User Type",
+      "type": "select",
+      "placeholder": "Select User Type",
+      "options": ["Individual", "Agent", "Builder"],
+      "required": true
+    },
+    {
+      "name": "Project_Builder",
+      "label": "Project/Builder",
+      "type": "text",
+      "placeholder": "Enter project or builder name (optional)"
+    },
+    {
+      "name": "source",
+      "label": "Source",
+      "type": "select",
+      "placeholder": "Select Source",
+      "options": ["Website", "Referral", "Advertisement", "Walk-in", "Other"],
+      "required": true
+    },
+    {
+      "name": "Profession",
+      "label": "Profession",
+      "type": "text",
+      "placeholder": "Enter profession (optional)"
+    },
+    {
+      "name": "deal",
+      "label": "Deal",
+      "type": "select",
+      "placeholder": "Select Deal Status",
+      "options": ["Open", "In Progress", "Closed"],
+      "required": true
+    },
+    {
+      "name": "priority",
+      "label": "Priority",
+      "type": "select",
+      "placeholder": "Select Priority",
+      "options": ["Hot", "Cold"],
+      "required": true
+    },
+    {
+      "name": "userid",
+      "label": "User ID",
+      "type": "text",
+      "placeholder": "Enter user ID",
+      "defaultValue": "1",
+      "required": true
+    }
+  ]
+}

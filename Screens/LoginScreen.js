@@ -1,69 +1,111 @@
 import React, { useContext, useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Button, StyleSheet } from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StyleSheet,
+  Alert,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+} from 'react-native';
 import { AuthContext } from '../context/AuthContext';
+import { useNavigation } from '@react-navigation/native';
 
-
-export default function LoginScreen({ navigation }) {
+export default function LoginScreen() {
+  const navigation = useNavigation();
   const { login } = useContext(AuthContext);
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    login({ email }); // Simulated login
+  const handleLogin = async () => {
+    if (!email.trim() || !password.trim()) {
+      Alert.alert('Validation Error', 'Please enter both email and password.');
+      return;
+    }
+
+    try {
+      const result = await login({ email, password });
+
+      if (!result?.success) {
+        Alert.alert('Login Failed', result?.message || 'Invalid credentials.');
+      }
+      // Successful login is handled by AuthContext/AppNavigator
+    } catch (err) {
+      console.error('Login Error:', err);
+      Alert.alert('Login Error', 'Something went wrong. Please try again.');
+    }
   };
 
-  
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Welcome Back 👋</Text>
-      <Text style={styles.subHeader}>Login to your account</Text>
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+    >
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.header}>Welcome Back 👋</Text>
+        <Text style={styles.subHeader}>Login to your account</Text>
 
-      <TextInput
-        placeholder="Email"
-        style={styles.input}
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-        autoCapitalize="none"
-      />
+<TextInput
+  placeholder="Email"
+  placeholderTextColor="black"
+  style={styles.input}
+  value={email}
+  onChangeText={setEmail}
+  keyboardType="email-address"
+  autoCapitalize="none"
+  autoComplete="email"
+/>
 
-      <TextInput
-        placeholder="Password"
-        style={styles.input}
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
+<TextInput
+  placeholder="Password"
+  placeholderTextColor="black"
+  style={[styles.input, { color: 'black' }]} 
+  value={password}
+  onChangeText={setPassword}
+  secureTextEntry
+  autoComplete="password"
+/>
 
-      <TouchableOpacity style={styles.forgot} onPress={() => alert('Forgot password flow')}>
-        <Text style={styles.forgotText}>Forgot Password?</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-        <Text style={styles.loginButtonText}>Login</Text>
-      </TouchableOpacity>
-
-      <Text style={styles.orText}>OR</Text>
-
-      {/* Social login buttons (UI only) */}
-      <View style={styles.socialButtons}>
-        <TouchableOpacity style={[styles.socialButton, { backgroundColor: '#db4437' }]}>
-          <Text style={styles.socialText}>Login with Google</Text>
+        <TouchableOpacity
+          style={styles.forgot}
+          onPress={() =>
+            Alert.alert('Forgot Password?', 'Reset flow will be added soon.')
+          }
+        >
+          <Text style={styles.forgotText}>Forgot Password?</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.socialButton, { backgroundColor: '#3b5998' }]}>
-          <Text style={styles.socialText}>Login with Facebook</Text>
-        </TouchableOpacity>
-      </View>
 
-      {/* Footer link to Register */}
-      <View style={styles.footer}>
-        <Text style={styles.footerText}>Don't have an account?</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-          <Text style={styles.footerLink}> Sign up</Text>
+        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
+          <Text style={styles.loginButtonText}>Login</Text>
         </TouchableOpacity>
-      </View>
-    </View>
+
+        <Text style={styles.orText}>OR</Text>
+
+        <View style={styles.socialButtons}>
+          <TouchableOpacity
+            style={[styles.socialButton, { backgroundColor: '#db4437' }]}
+          >
+            <Text style={styles.socialText}>Login with Google</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.socialButton, { backgroundColor: '#3b5998' }]}
+          >
+            <Text style={styles.socialText}>Login with Facebook</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>Don't have an account?</Text>
+          <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+            <Text style={styles.footerLink}> Sign up</Text>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
 
@@ -142,3 +184,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
+

@@ -1,0 +1,64 @@
+{
+  "manager": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Negotiation",
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested",
+    "Duplicate",
+    "Invalid Lead"
+  ],
+  "CRM Exec.": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Finalized / Closed",
+    "Follow-up",
+    "Duplicate",
+    "Invalid Lead"
+  ],
+  "telecaller": [
+    "Contacted",
+    "Qualified",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested"
+  ],
+  "Agent": [
+    "Site Visits",
+    "Negotiation",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested"
+  ],
+  "Documentation": [
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed"
+  ],
+    "admin": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Negotiation",
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested",
+    "Duplicate",
+    "Invalid Lead"
+  ]
+}

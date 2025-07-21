@@ -1,32 +1,54 @@
 {
   "expo": {
-    "name": "YagyaApp",
+    "name": "BPM",
     "slug": "YagyaApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "com.yourcompany.yagyaapp",
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_AUDIO",
+        "VIBRATE"
+      ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true
     },
+    "ios": {
+      "bundleIdentifier": "com.yourcompany.yagyaapp",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs microphone access to record calls.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to save call recordings.",
+        "NSUserNotificationUsageDescription": "This app uses notifications to keep you updated.",
+        "NSUserTrackingUsageDescription": "This identifier will be used to deliver personalized notifications.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
     },
     "plugins": [
-      "expo-localization"
-    ]
+      "expo-localization",
+      "expo-video",
+      "expo-notifications"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "574c39ce-304f-4368-96cd-780b5d4f6b80"
+      }
+    }
   }
 }

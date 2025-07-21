@@ -1,0 +1,328 @@
+{
+  "admin": {
+    "tabs": [
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      { "name": "AddProperty"},
+      {
+        "name": "Members",
+        "icon": "person-circle-outline",
+        "label": "Members"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      {
+        "name": "TaskScreen",
+        "icon": "checkbox-outline",
+        "label": "Task"
+      },
+      {
+        "name": "EventScreen",
+        "icon": "calendar-outline",
+        "label": "Events"
+      },
+      {
+        "name": "NotificationsScreen",
+        "icon": "notifications-outline",
+        "label": "Notifications"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "DealManagementScreen",
+        "icon": "briefcase-outline",
+        "label": "Deals"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  },
+  "manager": {
+    "tabs": [
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      { "name": "AddProperty"},
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "TaskScreen",
+        "icon": "checkbox-outline",
+        "label": "Task"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "EventScreen",
+        "icon": "calendar-outline",
+        "label": "Events"
+      },
+      {
+        "name": "NotificationsScreen",
+        "icon": "notifications-outline",
+        "label": "Notifications"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  },
+  "crm": {
+    "tabs": [
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      { "name": "AddProperty"},
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "FollowUpScreen",
+        "icon": "refresh-outline",
+        "label": "Follow-Ups"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "NotificationsScreen",
+        "icon": "notifications-outline",
+        "label": "Notifications"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  },
+  "telecaller": {
+    "tabs": [
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      { "name": "AddProperty"},
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "CallingQueueScreen",
+        "icon": "call-outline",
+        "label": "Calling Queue"
+      },
+      {
+        "name": "AutoDialerScriptsScreen",
+        "icon": "document-text-outline",
+        "label": "Scripts"
+      },
+      {
+        "name": "TaskScreen",
+        "icon": "checkbox-outline",
+        "label": "Task"
+      },
+      {
+        "name": "NotificationsScreen",
+        "icon": "notifications-outline",
+        "label": "Notifications"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  },
+  "agent": {
+    "tabs": [
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      { "name": "AddProperty"},
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "SiteVisitScreen",
+        "icon": "map-outline",
+        "label": "Site Visits"
+      },
+      {
+        "name": "TaskScreen",
+        "icon": "checkbox-outline",
+        "label": "Task"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "EventScreen",
+        "icon": "calendar-outline",
+        "label": "Events"
+      },
+      {
+        "name": "NotificationsScreen",
+        "icon": "notifications-outline",
+        "label": "Notifications"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  },
+  "documentation": {
+    "tabs": [
+      {
+        "name": "Agenda",
+        "icon": "calendar-outline",
+        "label": "Agenda"
+      },
+      {
+        "name": "Leads",
+        "icon": "people-outline",
+        "label": "Leads"
+      },
+      {
+        "name": "PropertiesScreen",
+        "icon": "home-outline",
+        "label": "Properties"
+      },
+      {
+        "name": "More",
+        "icon": "ellipsis-horizontal-outline",
+        "label": "More"
+      }
+    ],
+    "more": [
+      {
+        "name": "PendingDocsScreen",
+        "icon": "file-tray-stacked-outline",
+        "label": "Pending Docs"
+      },
+      {
+        "name": "UploadDocumentScreen",
+        "icon": "cloud-upload-outline",
+        "label": "Upload"
+      },
+      {
+        "name": "VerificationScreen",
+        "icon": "shield-checkmark-outline",
+        "label": "Verifications"
+      },
+      {
+        "name": "ReportsScreen",
+        "icon": "document-text-outline",
+        "label": "Reports"
+      },
+      {
+        "name": "ProfileScreen",
+        "icon": "person-outline",
+        "label": "Profile"
+      }
+    ]
+  }
+}

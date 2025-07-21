@@ -1,0 +1,702 @@
+[
+  {
+    "id": "L001",
+    "name": "Sanjay Kapoor",
+    "phone": "9123450001",
+    "email": "sanjay.kapoor.newleads@example.com",
+    "status": "New Leads",
+    "timestamp": 1756801234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L002",
+    "name": "Priya Sharma",
+    "phone": "9123450002",
+    "email": "priya.sharma.newleads@example.com",
+    "status": "New Leads",
+    "timestamp": 1756456789012,
+    "imageUrl": "https://randomuser.me/api/portraits/women/2.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L003",
+    "name": "Ravi Patel",
+    "phone": "9123450003",
+    "email": "ravi.patel.newleads@example.com",
+    "status": "New Leads",
+    "timestamp": 1755982345678,
+    "imageUrl": "https://randomuser.me/api/portraits/men/3.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L004",
+    "name": "Neha Gupta",
+    "phone": "9123450004",
+    "email": "neha.gupta.newleads@example.com",
+    "status": "New Leads",
+    "timestamp": 1755517890123,
+    "imageUrl": "https://randomuser.me/api/portraits/women/4.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L005",
+    "name": "Amit Desai",
+    "phone": "9123450005",
+    "email": "amit.desai.newleads@example.com",
+    "status": "New Leads",
+    "timestamp": 1755043456789,
+    "imageUrl": "https://randomuser.me/api/portraits/men/5.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L006",
+    "name": "Kunal Thakur",
+    "phone": "9123450006",
+    "email": "kunal.thakur.contacted@example.com",
+    "status": "Contacted",
+    "timestamp": 1756923456789,
+    "imageUrl": "https://randomuser.me/api/portraits/men/6.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L007",
+    "name": "Swati Nair",
+    "phone": "9123450007",
+    "email": "swati.nair.contacted@example.com",
+    "status": "Contacted",
+    "timestamp": 1756578901234,
+    "imageUrl": "https://randomuser.me/api/portraits/women/7.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L008",
+    "name": "Vikram Singh",
+    "phone": "9123450008",
+    "email": "vikram.singh.contacted@example.com",
+    "status": "Contacted",
+    "timestamp": 1756104567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/8.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L009",
+    "name": "Anjali Rao",
+    "phone": "9123450009",
+    "email": "anjali.rao.contacted@example.com",
+    "status": "Contacted",
+    "timestamp": 1755639012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/9.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L010",
+    "name": "Rohan Joshi",
+    "phone": "9123450010",
+    "email": "rohan.joshi.contacted@example.com",
+    "status": "Contacted",
+    "timestamp": 1755164567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/10.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L011",
+    "name": "Meena Shah",
+    "phone": "9123450011",
+    "email": "meena.shah.qualified@example.com",
+    "status": "Qualified",
+    "timestamp": 1757045678901,
+    "imageUrl": "https://randomuser.me/api/portraits/women/11.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L012",
+    "name": "Arjun Iyer",
+    "phone": "9123450012",
+    "email": "arjun.iyer.qualified@example.com",
+    "status": "Qualified",
+    "timestamp": 1756701234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/12.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L013",
+    "name": "Divya Kapoor",
+    "phone": "9123450013",
+    "email": "divya.kapoor.qualified@example.com",
+    "status": "Qualified",
+    "timestamp": 1756226789012,
+    "imageUrl": "https://randomuser.me/api/portraits/women/13.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L014",
+    "name": "Sanjay Reddy",
+    "phone": "9123450014",
+    "email": "sanjay.reddy.qualified@example.com",
+    "status": "Qualified",
+    "timestamp": 1755762345678,
+    "imageUrl": "https://randomuser.me/api/portraits/men/14.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L015",
+    "name": "Ritu Jain",
+    "phone": "9123450015",
+    "email": "ritu.jain.qualified@example.com",
+    "status": "Qualified",
+    "timestamp": 1755287890123,
+    "imageUrl": "https://randomuser.me/api/portraits/women/15.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L016",
+    "name": "Ajay Chawla",
+    "phone": "9123450016",
+    "email": "ajay.chawla.sitevisits@example.com",
+    "status": "Site Visits",
+    "timestamp": 1756823456789,
+    "imageUrl": "https://randomuser.me/api/portraits/men/16.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L017",
+    "name": "Preeti Rani",
+    "phone": "9123450017",
+    "email": "preeti.rani.sitevisits@example.com",
+    "status": "Site Visits",
+    "timestamp": 1756479012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/17.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L018",
+    "name": "Siddharth Shah",
+    "phone": "9123450018",
+    "email": "siddharth.shah.sitevisits@example.com",
+    "status": "Site Visits",
+    "timestamp": 1756004567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/18.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L019",
+    "name": "Lata Pillai",
+    "phone": "9123450019",
+    "email": "lata.pillai.sitevisits@example.com",
+    "status": "Site Visits",
+    "timestamp": 1755539012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/19.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L020",
+    "name": "Vikas Yadav",
+    "phone": "9123450020",
+    "email": "vikas.yadav.sitevisits@example.com",
+    "status": "Site Visits",
+    "timestamp": 1755064567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/20.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L021",
+    "name": "Rina Dutta",
+    "phone": "9123450021",
+    "email": "rina.dutta.negotiation@example.com",
+    "status": "Negotiation",
+    "timestamp": 1756945678901,
+    "imageUrl": "https://randomuser.me/api/portraits/women/21.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L022",
+    "name": "Anil Mehra",
+    "phone": "9123450022",
+    "email": "anil.mehra.negotiation@example.com",
+    "status": "Negotiation",
+    "timestamp": 1756601234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/22.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L023",
+    "name": "Shreya Ghosh",
+    "phone": "9123450023",
+    "email": "shreya.ghosh.negotiation@example.com",
+    "status": "Negotiation",
+    "timestamp": 1756126789012,
+    "imageUrl": "https://randomuser.me/api/portraits/women/23.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L024",
+    "name": "Rahul Verma",
+    "phone": "9123450024",
+    "email": "rahul.verma.negotiation@example.com",
+    "status": "Negotiation",
+    "timestamp": 1755652345678,
+    "imageUrl": "https://randomuser.me/api/portraits/men/24.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L025",
+    "name": "Sneha Roy",
+    "phone": "9123450025",
+    "email": "sneha.roy.negotiation@example.com",
+    "status": "Negotiation",
+    "timestamp": 1755177890123,
+    "imageUrl": "https://randomuser.me/api/portraits/women/25.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L026",
+    "name": "Vijay Singh",
+    "phone": "9123450026",
+    "email": "vijay.singh.bookingconfirmed@example.com",
+    "status": "Booking Confirmed",
+    "timestamp": 1757067890123,
+    "imageUrl": "https://randomuser.me/api/portraits/men/26.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L027",
+    "name": "Poonam Sharma",
+    "phone": "9123450027",
+    "email": "poonam.sharma.bookingconfirmed@example.com",
+    "status": "Booking Confirmed",
+    "timestamp": 1756723456789,
+    "imageUrl": "https://randomuser.me/api/portraits/women/27.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L028",
+    "name": "Kiran Kumar",
+    "phone": "9123450028",
+    "email": "kiran.kumar.bookingconfirmed@example.com",
+    "status": "Booking Confirmed",
+    "timestamp": 1756249012345,
+    "imageUrl": "https://randomuser.me/api/portraits/men/28.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L029",
+    "name": "Mira Saxena",
+    "phone": "9123450029",
+    "email": "mira.saxena.bookingconfirmed@example.com",
+    "status": "Booking Confirmed",
+    "timestamp": 1755774567890,
+    "imageUrl": "https://randomuser.me/api/portraits/women/29.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L030",
+    "name": "Suresh Iyer",
+    "phone": "9123450030",
+    "email": "suresh.iyer.bookingconfirmed@example.com",
+    "status": "Booking Confirmed",
+    "timestamp": 1755301234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/30.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L031",
+    "name": "Nikhil Roy",
+    "phone": "9123450031",
+    "email": "nikhil.roy.documentcollection@example.com",
+    "status": "Document Collection",
+    "timestamp": 1756845678901,
+    "imageUrl": "https://randomuser.me/api/portraits/men/31.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L032",
+    "name": "Shalini Das",
+    "phone": "9123450032",
+    "email": "shalini.das.documentcollection@example.com",
+    "status": "Document Collection",
+    "timestamp": 1756501234567,
+    "imageUrl": "https://randomuser.me/api/portraits/women/32.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L033",
+    "name": "Deepak Bose",
+    "phone": "9123450033",
+    "email": "deepak.bose.documentcollection@example.com",
+    "status": "Document Collection",
+    "timestamp": 1756026789012,
+    "imageUrl": "https://randomuser.me/api/portraits/men/33.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L034",
+    "name": "Anita Thakur",
+    "phone": "9123450034",
+    "email": "anita.thakur.documentcollection@example.com",
+    "status": "Document Collection",
+    "timestamp": 1755552345678,
+    "imageUrl": "https://randomuser.me/api/portraits/women/34.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L035",
+    "name": "Kunal Nair",
+    "phone": "9123450035",
+    "email": "kunal.nair.documentcollection@example.com",
+    "status": "Document Collection",
+    "timestamp": 1755077890123,
+    "imageUrl": "https://randomuser.me/api/portraits/men/35.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L036",
+    "name": "Swati Vyas",
+    "phone": "9123450036",
+    "email": "swati.vyas.loanunderprocess@example.com",
+    "status": "Loan Under Process",
+    "timestamp": 1756967890123,
+    "imageUrl": "https://randomuser.me/api/portraits/women/36.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L037",
+    "name": "Ravi Saxena",
+    "phone": "9123450037",
+    "email": "ravi.saxena.loanunderprocess@example.com",
+    "status": "Loan Under Process",
+    "timestamp": 1756623456789,
+    "imageUrl": "https://randomuser.me/api/portraits/men/37.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L038",
+    "name": "Mira Chawla",
+    "phone": "9123450038",
+    "email": "mira.chawla.loanunderprocess@example.com",
+    "status": "Loan Under Process",
+    "timestamp": 1756149012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/38.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L039",
+    "name": "Ajay Rani",
+    "phone": "9123450039",
+    "email": "ajay.rani.loanunderprocess@example.com",
+    "status": "Loan Under Process",
+    "timestamp": 1755674567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/39.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L040",
+    "name": "Preeti Shah",
+    "phone": "9123450040",
+    "email": "preeti.shah.loanunderprocess@example.com",
+    "status": "Loan Under Process",
+    "timestamp": 1755201234567,
+    "imageUrl": "https://randomuser.me/api/portraits/women/40.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L041",
+    "name": "Siddharth Pillai",
+    "phone": "9123450041",
+    "email": "siddharth.pillai.finalizedclosed@example.com",
+    "status": "Finalized / Closed",
+    "timestamp": 1757089012345,
+    "imageUrl": "https://randomuser.me/api/portraits/men/41.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L042",
+    "name": "Lata Yadav",
+    "phone": "9123450042",
+    "email": "lata.yadav.finalizedclosed@example.com",
+    "status": "Finalized / Closed",
+    "timestamp": 1756744567890,
+    "imageUrl": "https://randomuser.me/api/portraits/women/42.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L043",
+    "name": "Vikas Dutta",
+    "phone": "9123450043",
+    "email": "vikas.dutta.finalizedclosed@example.com",
+    "status": "Finalized / Closed",
+    "timestamp": 1756270123456,
+    "imageUrl": "https://randomuser.me/api/portraits/men/43.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L044",
+    "name": "Rina Aggarwal",
+    "phone": "9123450044",
+    "email": "rina.aggarwal.finalizedclosed@example.com",
+    "status": "Finalized / Closed",
+    "timestamp": 1755795678901,
+    "imageUrl": "https://randomuser.me/api/portraits/women/44.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L045",
+    "name": "Manish Sethi",
+    "phone": "9123450045",
+    "email": "manish.sethi.finalizedclosed@example.com",
+    "status": "Finalized / Closed",
+    "timestamp": 1755321234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/45.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L046",
+    "name": "Harish Vyas",
+    "phone": "9123450046",
+    "email": "harish.vyas.followup@example.com",
+    "status": "Follow-up",
+    "timestamp": 1756867890123,
+    "imageUrl": "https://randomuser.me/api/portraits/men/46.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L047",
+    "name": "Rekha Sharma",
+    "phone": "9123450047",
+    "email": "rekha.sharma.followup@example.com",
+    "status": "Follow-up",
+    "timestamp": 1756523456789,
+    "imageUrl": "https://randomuser.me/api/portraits/women/47.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L048",
+    "name": "Sachin Pillai",
+    "phone": "9123450048",
+    "email": "sachin.pillai.followup@example.com",
+    "status": "Follow-up",
+    "timestamp": 1756049012345,
+    "imageUrl": "https://randomuser.me/api/portraits/men/48.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L049",
+    "name": "Pooja Mishra",
+    "phone": "9123450049",
+    "email": "pooja.mishra.followup@example.com",
+    "status": "Follow-up",
+    "timestamp": 1755574567890,
+    "imageUrl": "https://randomuser.me/api/portraits/women/49.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L050",
+    "name": "Vikram Reddy",
+    "phone": "9123450050",
+    "email": "vikram.reddy.followup@example.com",
+    "status": "Follow-up",
+    "timestamp": 1755101234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/50.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L051",
+    "name": "Anjali Gupta",
+    "phone": "9123450051",
+    "email": "anjali.gupta.notnegotiated@example.com",
+    "status": "Not negotiated",
+    "timestamp": 1756989012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/51.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L052",
+    "name": "Rohan Desai",
+    "phone": "9123450052",
+    "email": "rohan.desai.notnegotiated@example.com",
+    "status": "Not negotiated",
+    "timestamp": 1756644567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/52.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L053",
+    "name": "Priya Nair",
+    "phone": "9123450053",
+    "email": "priya.nair.notnegotiated@example.com",
+    "status": "Not negotiated",
+    "timestamp": 1756170123456,
+    "imageUrl": "https://randomuser.me/api/portraits/women/53.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L054",
+    "name": "Amit Joshi",
+    "phone": "9123450054",
+    "email": "amit.joshi.notnegotiated@example.com",
+    "status": "Not negotiated",
+    "timestamp": 1755695678901,
+    "imageUrl": "https://randomuser.me/api/portraits/men/54.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L055",
+    "name": "Neha Rao",
+    "phone": "9123450055",
+    "email": "neha.rao.notnegotiated@example.com",
+    "status": "Not negotiated",
+    "timestamp": 1755221234567,
+    "imageUrl": "https://randomuser.me/api/portraits/women/55.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L056",
+    "name": "Kiran Kumar",
+    "phone": "9123450056",
+    "email": "kiran.kumar.notinterested@example.com",
+    "status": "Not Interested",
+    "timestamp": 1757011234567,
+    "imageUrl": "https://randomuser.me/api/portraits/men/56.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L057",
+    "name": "Suresh Iyer",
+    "phone": "9123450057",
+    "email": "suresh.iyer.notinterested@example.com",
+    "status": "Not Interested",
+    "timestamp": 1756666789012,
+    "imageUrl": "https://randomuser.me/api/portraits/men/57.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L058",
+    "name": "Meena Shah",
+    "phone": "9123450058",
+    "email": "meena.shah.notinterested@example.com",
+    "status": "Not Interested",
+    "timestamp": 1756192345678,
+    "imageUrl": "https://randomuser.me/api/portraits/women/58.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L059",
+    "name": "Arjun Iyer",
+    "phone": "9123450059",
+    "email": "arjun.iyer.notinterested@example.com",
+    "status": "Not Interested",
+    "timestamp": 1755717890123,
+    "imageUrl": "https://randomuser.me/api/portraits/men/59.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L060",
+    "name": "Divya Kapoor",
+    "phone": "9123450060",
+    "email": "divya.kapoor.notinterested@example.com",
+    "status": "Not Interested",
+    "timestamp": 1755243456789,
+    "imageUrl": "https://randomuser.me/api/portraits/women/60.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L061",
+    "name": "Sanjay Reddy",
+    "phone": "9123450061",
+    "email": "sanjay.reddy.duplicate@example.com",
+    "status": "Duplicate",
+    "timestamp": 1757033456789,
+    "imageUrl": "https://randomuser.me/api/portraits/men/61.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L062",
+    "name": "Ritu Jain",
+    "phone": "9123450062",
+    "email": "ritu.jain.duplicate@example.com",
+    "status": "Duplicate",
+    "timestamp": 1756689012345,
+    "imageUrl": "https://randomuser.me/api/portraits/women/62.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L063",
+    "name": "Vivek Menon",
+    "phone": "9123450063",
+    "email": "vivek.menon.duplicate@example.com",
+    "status": "Duplicate",
+    "timestamp": 1756214567890,
+    "imageUrl": "https://randomuser.me/api/portraits/men/63.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L064",
+    "name": "Nikhil Roy",
+    "phone": "9123450064",
+    "email": "nikhil.roy.duplicate@example.com",
+    "status": "Duplicate",
+    "timestamp": 1755740123456,
+    "imageUrl": "https://randomuser.me/api/portraits/men/64.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L065",
+    "name": "Shalini Das",
+    "phone": "9123450065",
+    "email": "shalini.das.duplicate@example.com",
+    "status": "Duplicate",
+    "timestamp": 1755265678901,
+    "imageUrl": "https://randomuser.me/api/portraits/women/65.jpg",
+    "icon": "❌"
+  },
+  {
+    "id": "L066",
+    "name": "Deepak Bose",
+    "phone": "9123450066",
+    "email": "deepak.bose.invalidlead@example.com",
+    "status": "Invalid Lead",
+    "timestamp": 1757055678901,
+    "imageUrl": "https://randomuser.me/api/portraits/men/66.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L067",
+    "name": "Anita Thakur",
+    "phone": "9123450067",
+    "email": "anita.thakur.invalidlead@example.com",
+    "status": "Invalid Lead",
+    "timestamp": 1756711234567,
+    "imageUrl": "https://randomuser.me/api/portraits/women/67.jpg",
+    "icon": "🔥"
+  },
+  {
+    "id": "L068",
+    "name": "Kunal Nair",
+    "phone": "9123450068",
+    "email": "kunal.nair.invalidlead@example.com",
+    "status": "Invalid Lead",
+    "timestamp": 1756236789012,
+    "imageUrl": "https://randomuser.me/api/portraits/men/68.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L069",
+    "name": "Swati Vyas",
+    "phone": "9123450069",
+    "email": "swati.vyas.invalidlead@example.com",
+    "status": "Invalid Lead",
+    "timestamp": 1755762345678,
+    "imageUrl": "https://randomuser.me/api/portraits/women/69.jpg",
+    "icon": "🔄"
+  },
+  {
+    "id": "L070",
+    "name": "Ravi Saxena",
+    "phone": "9123450070",
+    "email": "ravi.saxena.invalidlead@example.com",
+    "status": "Invalid Lead",
+    "timestamp": 1755287890123,
+    "imageUrl": "https://randomuser.me/api/portraits/men/70.jpg",
+    "icon": "❌"
+  }
+]

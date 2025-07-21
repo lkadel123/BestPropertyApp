@@ -1,0 +1,697 @@
+{
+  "residential": {
+    "Flat/Apartment": {
+      "step1": [
+        {
+          "name": "bhk",
+          "label": "Flat/Apartment Type",
+          "type": "select",
+          "placeholder": "Select Flat/Apartment Type...",
+          "options": [
+            "1RK/Studio", "1BHK", "2BHK", "2+1BHK", "3BHK", "3+1BHK", "4BHK", "4+1BHK", "5BHK", "5+1BHK", "Other"
+          ]
+        },
+        {
+          "name": "floor_no",
+          "label": "Which Floor Number",
+          "type": "text",
+          "placeholder": "Which Floor Number"
+        },
+        {
+          "name": "total_floors",
+          "label": "Total Number Floor",
+          "type": "text",
+          "placeholder": "Total Floor Number"
+        },
+        {
+          "name": "bedrooms",
+          "label": "Total Bedrooms",
+          "type": "select",
+          "placeholder": "Bedroom Number",
+          "options": ["1", "2", "3", "4", "5"]
+        },
+        {
+          "name": "bathrooms",
+          "label": "Total Bathrooms",
+          "type": "select",
+          "placeholder": "Bathroom Number",
+          "options": ["1", "2", "3", "4", "5"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.ft)",
+          "option": ["sq.ft", "sq.yard"]
+        },
+        {
+          "name": "built",
+          "label": "Built-Up Area",
+          "type": "selectOrText",
+          "placeholder": "Built-Up Area (sq.ft)",
+          "option": ["sq.ft", "sq.yard"]
+        },
+        {
+          "name": "land",
+          "label": "Land Area",
+          "type": "selectOrText",
+          "placeholder": "Land Area (sq.ft)",
+          "option": ["sq.ft", "sq.yard"]
+        },
+        {
+          "name": "construction_status",
+          "label": "Construction Status",
+          "type": "select",
+          "options": ["Ready To Move", "Re-Sale", "Under Construction"]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-1 year", "1-5 years", "5-10 years", "10+ years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "amenities",
+          "label": "Amenities",
+          "type": "checkbox",
+          "options": [
+            "Car Parking", "Security Services", "Water Supply", "Elevators",
+            "Power Backup", "Gym", "Play Area", "Swimming Pool",
+            "Restaurants", "Party Hall", "Temple and Religious Activity Place",
+            "Cinema Hall", "Walking/Jogging Track"
+          ]
+        },
+        {
+          "name": "gated_community",
+          "label": "Gated Community?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        },
+        {
+          "name": "in_society",
+          "label": "Is this in a society?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Independent House / Kothi": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "built",
+          "label": "Covered Area",
+          "type": "selectOrText",
+          "placeholder": "Covered Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "kothi_story_type",
+          "label": "Independent House / Kothi Type",
+          "type": "select",
+          "options": ["Single Story", "Double Story", "Duplex Story", "Triplex Story", "Villa Style"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "construction_status",
+          "label": "Construction Status",
+          "type": "select",
+          "options": ["Ready To Move", "Re-Sale", "Under Construction"]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-1 year", "1-5 years", "5-10 years", "10+ years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "gated_community",
+          "label": "Gated Community?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Independent/Builder Floor": {
+      "step1": [
+        {
+          "name": "floor_no",
+          "label": "Independent/Builder Floor Type",
+          "type": "select",
+          "options": ["Ground Floor", "1st Floor", "2nd Floor", "3rd Floor", "Top Floor"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "construction_status",
+          "label": "Construction Status",
+          "type": "select",
+          "options": ["Ready To Move", "Re-Sale", "Under Construction"]
+        },
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-1 year", "1-5 years", "5-10 years", "10+ years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "direction",
+          "label": "Direction",
+          "type": "select",
+          "options": ["East", "West", "North", "South", "North-East", "North-West", "South-East", "South-West", "Other"]
+        },
+        {
+          "name": "facing",
+          "label": "Facing",
+          "type": "select",
+          "options": [
+            "Park Facing", "Main Road Facing", "Corner Facing", "Parking Facing",
+            "Garden Facing", "Open Area Facing", "Club House Facing", "Market Facing",
+            "Lake Facing", "Highway Facing", "Temple Facing", "School Facing", "Pool Facing", "other"
+          ]
+        },
+        {
+          "name": "gated_community",
+          "label": "Gated Community?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Plot": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "width_length",
+          "label": "Width x Length",
+          "type": "text",
+          "placeholder": "e.g., 30x40"
+        },
+        {
+          "name": "road_width",
+          "label": "Road Width",
+          "type": "select",
+          "options": ["20ft", "30ft", "40ft", "50ft+"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "direction",
+          "label": "Direction",
+          "type": "select",
+          "options": ["East", "West", "North", "South", "North-East", "North-West", "South-East", "South-West", "Other"]
+        },
+        {
+          "name": "facing",
+          "label": "Facing",
+          "type": "select",
+          "options": [
+            "Park Facing", "Main Road Facing", "Corner Facing", "Parking Facing",
+            "Garden Facing", "Open Area Facing", "Club House Facing", "Market Facing",
+            "Lake Facing", "Highway Facing", "Temple Facing", "School Facing", "Pool Facing", "other"
+          ]
+        }
+      ]
+    },
+    "Serviced Apartment": {
+      "step1": [
+        {
+          "name": "bhk",
+          "label": "Serviced Apartment Type",
+          "type": "select",
+          "options": ["1RK/Studio", "1BHK", "2BHK", "3BHK", "Penthouse"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "construction_status",
+          "label": "Construction Status",
+          "type": "select",
+          "options": ["Ready To Move", "Re-Sale", "Under Construction"]
+        },
+        {
+          "name": "total_floors",
+          "label": "Total Floor Number",
+          "type": "text",
+          "placeholder": "Total Floor Number"
+        },
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-1 year", "1-5 years", "5-10 years", "10+ years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "direction",
+          "label": "Direction",
+          "type": "select",
+          "options": ["East", "West", "North", "South", "North-East", "North-West", "South-East", "South-West", "Other"]
+        },
+        {
+          "name": "facing",
+          "label": "Facing",
+          "type": "select",
+          "options": [
+            "Park Facing", "Main Road Facing", "Corner Facing", "Parking Facing",
+            "Garden Facing", "Open Area Facing", "Club House Facing", "Market Facing",
+            "Lake Facing", "Highway Facing", "Temple Facing", "School Facing", "Pool Facing", "other"
+          ]
+        },
+        {
+          "name": "gated_community",
+          "label": "Gated Community?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        },
+        {
+          "name": "in_society",
+          "label": "Is this in a society?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Farmhouse": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "additional",
+          "label": "Farm Area (Optional)",
+          "type": "selectOrText",
+          "placeholder": "Farm Area (acres)",
+          "option": ["sq.yard", "marla", "kanal", "acres"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing Status",
+          "type": "select",
+          "options": ["Semi-Furnished", "Unfurnished", "Fully-Furnished"]
+        },
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "amenities",
+          "label": "Amenities",
+          "type": "checkbox",
+          "options": [
+            "Car Parking", "Security Services", "Water Supply", "Elevators",
+            "Power Backup", "Gym", "Play Area", "Swimming Pool",
+            "Restaurants", "Party Hall", "Temple and Religious Activity Place",
+            "Cinema Hall", "Walking/Jogging Track"
+          ]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-1 year", "1-5 years", "5-10 years", "10+ years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "landmark",
+          "label": "Near By",
+          "type": "select",
+          "options": ["Hospital", "School", "Restaurant", "Store", "Other"]
+        },
+        {
+          "name": "gated_community",
+          "label": "Gated Community?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Other": {
+      "step1": [
+        {
+          "name": "property_type",
+          "label": "Describe Property Type",
+          "type": "text",
+          "placeholder": "Describe the property type"
+        }
+      ]
+    }
+  },
+  "commercial": {
+    "Office": {
+      "step1": [
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing",
+          "type": "select",
+          "options": ["Bare Shell", "Semi-Furnished", "Furnished"]
+        },
+        {
+          "name": "sqft",
+          "label": "Area in sq.ft",
+          "type": "selectOrText",
+          "placeholder": "Area in sq.ft",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "has_lift",
+          "label": "Is there lift?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        },
+        {
+          "name": "parking_available",
+          "label": "Parking Available?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Retail": {
+      "step1": [
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing",
+          "type": "select",
+          "options": ["Bare Shell", "Semi-Furnished", "Furnished"]
+        },
+        {
+          "name": "sqft",
+          "label": "Area in sq.ft",
+          "type": "selectOrText",
+          "placeholder": "Area in sq.ft",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "floor_no",
+          "label": "Floor No",
+          "type": "text",
+          "placeholder": "Floor Number"
+        },
+        {
+          "name": "has_lift",
+          "label": "Is there lift?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        },
+        {
+          "name": "parking_available",
+          "label": "Parking Available?",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Plot/Land": {
+      "step1": [
+        {
+          "name": "land",
+          "label": "Plot Area",
+          "type": "selectOrText",
+          "placeholder": "Plot Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        },
+        {
+          "name": "width_length",
+          "label": "Width x Length",
+          "type": "text",
+          "placeholder": "e.g., 30x40"
+        },
+        {
+          "name": "road_width",
+          "label": "Road Width",
+          "type": "select",
+          "options": ["20ft", "30ft", "40ft", "50ft+"]
+        },
+        {
+          "name": "commercial_useType",
+          "label": "Use Type",
+          "type": "select",
+          "options": ["Industrial", "ShowRoom", "Shop"]
+        },
+        {
+          "name": "carpet",
+          "label": "Carpet Area",
+          "type": "selectOrText",
+          "placeholder": "Carpet Area (sq.yard)",
+          "option": ["sq.yard", "marla", "kanal"]
+        }
+      ]
+    },
+    "Storage": {
+      "step1": [
+        {
+          "name": "built",
+          "label": "Built-Up Area",
+          "type": "selectOrText",
+          "placeholder": "Built Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "land",
+          "label": "Land Area",
+          "type": "selectOrText",
+          "placeholder": "Land Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "shutters_count",
+          "label": "No. of Shutters",
+          "type": "text",
+          "placeholder": "Number of Shutters"
+        },
+        {
+          "name": "roof_height",
+          "label": "Height of Roof",
+          "type": "text",
+          "placeholder": "Height (ft)"
+        },
+        {
+          "name": "loading_bay",
+          "label": "Loading/Unloading Bay",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Industry": {
+      "step1": [
+        {
+          "name": "built",
+          "label": "Built Area",
+          "type": "selectOrText",
+          "placeholder": "Built Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "land",
+          "label": "Land Area",
+          "type": "selectOrText",
+          "placeholder": "Land Area (sq.ft)",
+          "option": ["sq.ft", "marla", "kanal"]
+        },
+        {
+          "name": "shutters_count",
+          "label": "No. of Shutters",
+          "type": "text",
+          "placeholder": "Number of Shutters"
+        },
+        {
+          "name": "roof_height",
+          "label": "Height of Roof",
+          "type": "text",
+          "placeholder": "Height (ft)"
+        },
+        {
+          "name": "loading_bay",
+          "label": "Loading/Unloading Bay",
+          "type": "radio",
+          "options": ["yes", "no"]
+        }
+      ]
+    },
+    "Hospital": {
+      "step1": [
+        {
+          "name": "hospital_type",
+          "label": "Hospital Type",
+          "type": "select",
+          "options": [
+            "Multispecialty", "Clinic", "Diagnostic Centre", "Dental",
+            "Orthopedic", "Maternity", "Eye Hospital"
+          ]
+        },
+        {
+          "name": "additional_value",
+          "label": "Number of Beds",
+          "type": "select",
+          "placeholder": "Enter total beds",
+          "options": ["10", "20", "30", "50", "100+"]
+        },
+        {
+          "name": "floor_available",
+          "label": "Available Floor",
+          "type": "select",
+          "options": ["Ground", "1st", "2nd", "3rd", "Full Building"]
+        },
+        {
+          "name": "furnishing_status",
+          "label": "Furnishing Type",
+          "type": "select",
+          "options": ["Fully Furnished (Operational)", "Semi-Furnished", "Bare Shell"]
+        }
+      ],
+      "step2": [
+        {
+          "name": "medical_facilities",
+          "label": "Medical Facilities Available",
+          "type": "checkbox",
+          "options": [
+            "ICU Room", "Operation Theatre", "Emergency Room", "OPD Rooms",
+            "Ambulance Parking", "Pharmacy Setup", "Doctor's Cabins",
+            "Pathology Lab", "Radiology Room"
+          ]
+        },
+        {
+          "name": "amenities",
+          "label": "Building Amenities",
+          "type": "checkbox",
+          "options": [
+            "Power Backup", "Lift", "Water Supply", "Fire Safety",
+            "CCTV Surveillance", "Reception Area", "Parking"
+          ]
+        },
+        {
+          "name": "hospital_license",
+          "label": "Hospital License Type",
+          "type": "select",
+          "options": [
+            "Registered under Clinical Establishment Act", "Private Limited",
+            "Proprietorship", "Other"
+          ]
+        },
+        {
+          "name": "property_age",
+          "label": "Property Age",
+          "type": "select",
+          "options": ["0-3 Years", "3-5 Years", "5-10 Years", "10+ Years"],
+          "showIf": { "field": "construction_status", "value": "Re-Sale" }
+        },
+        {
+          "name": "possession_status",
+          "label": "Possession Status",
+          "type": "select",
+          "options": ["Operational", "Vacant", "Under Renovation", "Under Construction"]
+        }
+      ]
+    },
+    "Other": {
+      "step1": [
+        {
+          "name": "property_type",
+          "label": "Describe Property Type",
+          "type": "text",
+          "placeholder": "Describe the property type"
+        }
+      ]
+    }
+  },
+  "step3Fields": [
+    {
+      "name": "name",
+      "label": "Property Title",
+      "type": "text",
+      "placeholder": "Property Title",
+      "required": true
+    },
+    {
+      "name": "description",
+      "label": "Property Description",
+      "type": "textarea",
+      "placeholder": "Property description",
+      "required": true
+    },
+    {
+      "name": "budget",
+      "label": "Demand Price",
+      "type": "selectOrText",
+      "placeholder": "Enter the correct price",
+      "option": ["Lac", "Cr"],
+      "required": true
+    },
+    {
+      "name": "city",
+      "label": "City",
+      "type": "select",
+      "placeholder": "City",
+      "options": ["Mohali", "Kharar", "Zirakpur", "Chandigarh", "Panchkula"]
+    },
+    {
+      "name": "address",
+      "label": "Location",
+      "type": "text",
+      "placeholder": "Location",
+      "required": true
+    },
+    {
+      "name": "zip_code",
+      "label": "Pin Code",
+      "type": "text",
+      "placeholder": "Pin Code"
+    },
+    {
+      "name": "map_link",
+      "label": "Map Link",
+      "type": "text",
+      "placeholder": "Map Link"
+    }
+  ]
+}

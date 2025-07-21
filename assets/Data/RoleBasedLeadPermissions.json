@@ -1,0 +1,70 @@
+{
+  "telecaller": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested"
+  ],
+  "CRM Exec.": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Negotiation",
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed",
+    "Follow-up",
+    "Not Interested",
+    "Duplicate",
+    "Invalid Lead"
+  ],
+  "manager": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Negotiation",
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested",
+    "Duplicate",
+    "Invalid Lead"
+  ],
+  "Agent": [
+    "Site Visits",
+    "Negotiation",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested"
+  ],
+  "Documentation": [
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed"
+  ],
+  "admin": [
+    "New Leads",
+    "Contacted",
+    "Qualified",
+    "Site Visits",
+    "Negotiation",
+    "Booking Confirmed",
+    "Document Collection",
+    "Loan Under Process",
+    "Finalized / Closed",
+    "Follow-up",
+    "Not negotiated",
+    "Not Interested",
+    "Duplicate",
+    "Invalid Lead"
+  ]
+}
