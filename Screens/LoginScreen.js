@@ -9,16 +9,18 @@ import {
   KeyboardAvoidingView,
   Platform,
   ScrollView,
+  ActivityIndicator,
 } from 'react-native';
-import { AuthContext } from '../context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 import { useNavigation } from '@react-navigation/native';
 
 export default function LoginScreen() {
   const navigation = useNavigation();
-  const { login } = useContext(AuthContext);
+  const { login } = useAuth();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleLogin = async () => {
     if (!email.trim() || !password.trim()) {
@@ -27,18 +29,21 @@ export default function LoginScreen() {
     }
 
     try {
+      setIsSubmitting(true);
       const result = await login({ email, password });
+
+      console.log('🔐 Login Result:', result); // <-- Added for debugging
 
       if (!result?.success) {
         Alert.alert('Login Failed', result?.message || 'Invalid credentials.');
       }
-      // Successful login is handled by AuthContext/AppNavigator
     } catch (err) {
       console.error('Login Error:', err);
       Alert.alert('Login Error', 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
-
 
   return (
     <KeyboardAvoidingView
@@ -49,26 +54,26 @@ export default function LoginScreen() {
         <Text style={styles.header}>Welcome Back 👋</Text>
         <Text style={styles.subHeader}>Login to your account</Text>
 
-<TextInput
-  placeholder="Email"
-  placeholderTextColor="black"
-  style={styles.input}
-  value={email}
-  onChangeText={setEmail}
-  keyboardType="email-address"
-  autoCapitalize="none"
-  autoComplete="email"
-/>
+        <TextInput
+          placeholder="Email"
+          placeholderTextColor="black"
+          style={styles.input}
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
+          autoComplete="email"
+        />
 
-<TextInput
-  placeholder="Password"
-  placeholderTextColor="black"
-  style={[styles.input, { color: 'black' }]} 
-  value={password}
-  onChangeText={setPassword}
-  secureTextEntry
-  autoComplete="password"
-/>
+        <TextInput
+          placeholder="Password"
+          placeholderTextColor="black"
+          style={[styles.input, { color: 'black' }]}
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+          autoComplete="password"
+        />
 
         <TouchableOpacity
           style={styles.forgot}
@@ -79,8 +84,16 @@ export default function LoginScreen() {
           <Text style={styles.forgotText}>Forgot Password?</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
-          <Text style={styles.loginButtonText}>Login</Text>
+        <TouchableOpacity
+          style={[styles.loginButton, isSubmitting && { backgroundColor: '#999' }]}
+          onPress={handleLogin}
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? (
+            <ActivityIndicator color="#fff" />
+          ) : (
+            <Text style={styles.loginButtonText}>Login</Text>
+          )}
         </TouchableOpacity>
 
         <Text style={styles.orText}>OR</Text>
@@ -112,7 +125,7 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    flex: 1,
+    flexGrow: 1,
     justifyContent: 'center',
     backgroundColor: '#fff',
   },
@@ -184,4 +197,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-

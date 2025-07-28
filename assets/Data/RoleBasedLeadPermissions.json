@@ -38,7 +38,7 @@
     "Duplicate",
     "Invalid Lead"
   ],
-  "Agent": [
+  "agent": [
     "Site Visits",
     "Negotiation",
     "Follow-up",
@@ -51,11 +51,15 @@
     "Loan Under Process",
     "Finalized / Closed"
   ],
-  "admin": [
-    "New Leads",
+  "Admin": [
+    "New",
+    "Hot",
     "Contacted",
+    "Rescheduled",
+    "Interested",
     "Qualified",
-    "Site Visits",
+    "Assigned",
+    "Site Visited",
     "Negotiation",
     "Booking Confirmed",
     "Document Collection",

@@ -32,7 +32,7 @@
     "Not negotiated",
     "Not Interested"
   ],
-  "Agent": [
+  "agent": [
     "Site Visits",
     "Negotiation",
     "Follow-up",
@@ -45,7 +45,7 @@
     "Loan Under Process",
     "Finalized / Closed"
   ],
-    "admin": [
+    "Admin": [
     "New Leads",
     "Contacted",
     "Qualified",

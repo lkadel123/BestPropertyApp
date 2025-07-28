@@ -12,21 +12,25 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Picker } from '@react-native-picker/picker';
+import { Dropdown } from 'react-native-element-dropdown';
 import { useNavigation } from '@react-navigation/native';
 import { AuthContext } from '../../../context/AuthContext';
 import LeadCard from './LeadStatus/LeadCard';
 import LeadModal from './LeadStatus/LeadModel';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { debounce } from 'lodash'; // Ensure lodash is installed: npm install lodash
-import leadViewPermissions from '../../../assets/Data/RoleBasedLeadPermissions.json';
+import { debounce } from 'lodash';
 import leadUpdatePermissions from '../../../assets/Data/LeadUpdatePermissions.json';
 
 // Valid statuses for validation
 const validStatuses = [
-  'New Leads',
+  'New',
+  'Hot',
   'Contacted',
+  'Rescheduled',
   'Qualified',
-  'Site Visits',
+  'Assigned',
+  'Site Visited',
+  'Interested',
   'Negotiation',
   'Booking Confirmed',
   'Document Collection',
@@ -55,19 +59,14 @@ export default function LeadStatusOverviewScreen({ route, navigation }) {
   const nav = useNavigation();
 
   // Hardcoded role and userId as per the provided fetchLeads
-  const role = 'admin';
+  const role = 'Admin';
   const userId = 1;
 
   // Debounce search input to avoid frequent updates
   const debouncedSearch = useMemo(() => debounce(setSearch, 300), []);
 
-  // Derive status definitions from fetched leads, filtered by role-based permissions
+  // Derive status definitions from fetched leads
   const statusDefinitions = useMemo(() => {
-    const userRole = isLoggedIn() ? user?.role : null;
-    const allowedStatuses = userRole && leadViewPermissions[userRole]
-      ? leadViewPermissions[userRole]
-      : validStatuses;
-
     const statusMap = new Map();
     leads.forEach((lead) => {
       if (validStatuses.includes(lead.status) && !statusMap.has(lead.status)) {
@@ -79,14 +78,13 @@ export default function LeadStatusOverviewScreen({ route, navigation }) {
 
     const statuses = Array.from(statusMap.entries())
       .map(([title, icon]) => ({ title, icon }))
-      .filter((def) => allowedStatuses.includes(def.title))
       .sort((a, b) => a.title.localeCompare(b.title));
 
     if (__DEV__) {
-      console.log(`Status definitions for role ${userRole || 'unauthorized'}:`, statuses);
+      console.log(`Status definitions:`, statuses);
     }
     return statuses;
-  }, [leads, user, userToken]);
+  }, [leads]);
 
   const allowedUpdateStatuses = useMemo(() => {
     const userRole = isLoggedIn() ? user?.role : null;
@@ -136,18 +134,6 @@ export default function LeadStatusOverviewScreen({ route, navigation }) {
     }
 
     try {
-      const userRole = isLoggedIn() ? user?.role : null;
-      const allowedStatuses = userRole && leadViewPermissions[userRole]
-        ? leadViewPermissions[userRole]
-        : validStatuses;
-
-      if (userRole && !leadViewPermissions[userRole]) {
-        if (__DEV__) console.warn(`Invalid role: ${userRole}`);
-        setError('Invalid user role. Please contact support.');
-        setIsLoading(false);
-        return;
-      }
-
       const url = `https://bestpropertiesmohali.com/api/Leads/get/?Role=Admin&Userid=1|`;
       const response = await fetch(url, {
         method: 'GET',
@@ -188,10 +174,10 @@ export default function LeadStatusOverviewScreen({ route, navigation }) {
             timestamp,
           };
         })
-        .filter((lead) => lead !== null && allowedStatuses.includes(lead.status));
+        .filter((lead) => lead !== null);
 
       if (__DEV__) {
-        console.log(`Role-based filter: Loaded ${validLeads.length} leads for role ${userRole || 'unauthorized'}`);
+        console.log(`Loaded ${validLeads.length} leads`);
         console.log('Lead timestamps:', validLeads.map(lead => ({ id: lead.id, status: lead.status, timestamp: lead.timestamp })));
       }
 
@@ -386,18 +372,28 @@ export default function LeadStatusOverviewScreen({ route, navigation }) {
           onChangeText={debouncedSearch} // Use debounced search
         />
         <View style={styles.pickerContainer}>
-          <Picker
-            selectedValue={selectedStatus}
-            onValueChange={(itemValue) => setSelectedStatus(itemValue)}
-            style={styles.picker}
-            dropdownIconColor="#000"
-            mode="dropdown"
-          >
-            <Picker.Item label="All Statuses" value="All" />
-            {statusDefinitions.map((status) => (
-              <Picker.Item key={status.title} label={status.title} value={status.title} />
-            ))}
-          </Picker>
+          <Dropdown
+            style={styles.dropdown}
+            containerStyle={styles.dropdownContainer}
+            itemTextStyle={styles.dropdownItemText}
+            data={[
+              { label: 'All Statuses', value: 'All' },
+              ...statusDefinitions.map((status) => ({
+                label: status.title,
+                value: status.title,
+              })),
+            ]}
+            labelField="label"
+            valueField="value"
+            placeholder="Select Status"
+            value={selectedStatus}
+            onChange={(item) => setSelectedStatus(item.value)}
+            renderItem={(item) => (
+              <View style={styles.dropdownItem}>
+                <Text style={styles.dropdownItemText}>{item.label}</Text>
+              </View>
+            )}
+          />
         </View>
       </View>
       <View style={styles.timeFilterContainer}>
@@ -512,12 +508,33 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     justifyContent: 'center',
   },
-  picker: {
+  dropdown: {
     width: 150,
-    height: 50,
-    color: '#555',
-    fontSize: 12,
+    height: 45,
+    borderColor: '#ccc',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingHorizontal: 10,
     backgroundColor: '#fff',
+  },
+
+  dropdownContainer: {
+    borderColor: '#ccc',
+    backgroundColor: '#fef',
+    borderWidth: 1,
+    borderRadius: 8,
+    paddingVertical: 4,
+    maxHeight: 300,
+  },
+
+  dropdownItem: {
+    paddingVertical: 2, // Reduce vertical spacing
+    paddingHorizontal: 8,
+  },
+
+  dropdownItemText: {
+    fontSize: 14,
+    color: '#333',
   },
   timeFilterContainer: {
     flexDirection: 'row',

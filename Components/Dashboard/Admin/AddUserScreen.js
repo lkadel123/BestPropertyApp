@@ -79,7 +79,7 @@ export default function AddUserScreen({ navigation }) {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
+          // Authorization: `Bearer 9j1h8hgjO0KUin2bhj58d97jiOh67f5h48hj78hg8vg5j63fo0h930`,
         },
         body: JSON.stringify(payload),
       });
